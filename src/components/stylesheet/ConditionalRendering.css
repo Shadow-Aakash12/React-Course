@@ -1,0 +1,9 @@
+.cond-box {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+  }

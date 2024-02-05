@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+// Import the useState hook
+import React from 'react';
+import LocalStorage from './components/LocalStorage';
+import SessionStorage from './components/SessionStorage';
+import UseState from './components/UseState';
+import ConditionalRendering from './components/ConditionalRendering';
 import './App.css';
+import FetchMethod from './components/FetchMethod';
+import UseSWR from './components/UseSWR';
+import ReactQuery from './components/ReactQuery';
+import Axios from './components/Axios';
+import UseFetch from './components/UseFetch';
 
-function App() {
+// Create a function component
+const App = () => {
+ 
+
+  // Render the component
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <UseState/>
+
+      <ConditionalRendering/>
+
+      <LocalStorage/>
+
+      <SessionStorage/>
+
+      <UseSWR/>
+
+      <FetchMethod/>
+
+      <ReactQuery/>
+
+      <Axios/>
+
+      <UseFetch/>
+
+      
     </div>
   );
-}
+};
 
+// Export the component
 export default App;
